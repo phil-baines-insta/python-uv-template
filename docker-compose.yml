@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      secrets:
+        - UV_INDEX_URL
+
+secrets:
+  UV_INDEX_URL:
+    environment: UV_INDEX_URL
